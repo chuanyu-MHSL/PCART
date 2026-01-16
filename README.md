@@ -3,12 +3,6 @@
 ## What is PCART?
 PCART is an automated tool designed to detect and repair Python API parameter compatibility issues. It is the first to achieve a fully automated process (end-to-end) that includes `API extraction`, `code instrumentation`, `mapping`, `compatibility analysis`, and `repair and validation`. PCART specializes in addressing API compatibility issues arising from parameter `addition`, `removal`, `renaming`, `reordering`, and the `conversion of positional parameters to keyword parameters`. 
 
-## Documentation
-PCART's doxygen document is available [here](https://pcart-tools.github.io/PCART-doxygen/html).
-
-
-For PCART's design and implementation details, please refer to our [paper](https://doi.org/10.48550/arXiv.2406.03839).
-
 ## Evaluation
 [PCBench](https://github.com/PCART-tools/PCBench) Benchmark for Python API Parameter Compatibility Issues
 
@@ -53,12 +47,10 @@ python extractLibAPI.py -cfg config.json
 ```
 
 
-## Usage Example
+### Example
 ```shell
 python main.py -cfg Deep-Graph-Kernels.json
 ```
-
-### Output
 
 The output consists of two parts: the updated project and a report, which is located in the `Report` directory and contains detailed records of each API's usage in the project, including the `call formats`, `call locations`, `coverage`, `parameter definitions in current version`, `parameter definitions in target version`, `compatibility status` and the `repair results`. The contents of the report are as follows:
 ```
@@ -378,6 +370,21 @@ Incompatible Scipy Invoked API Number: 1/21
 |----------------------------------------------------------------------------------------------------|
 ```
 
+## Documentation
+We release PCART as an open-source tool with the aim of contributing to and benefiting the broader open-source community. If you use PCART in your work, we kindly request that you acknowledge it by citing the relevant publication(s) listed below.
+
+```
+@article{PCART_TSE2025,
+  author={Zhang, Shuai and Xiao, Guanping and Wang, Jun and Lei, Huashan and He, Gangqiang and Liu, Yepang and Zheng, Zheng},
+  journal={IEEE Transactions on Software Engineering},
+  title={PCART: Automated Repair of Python API Parameter Compatibility Issues},
+  year={2025},
+  pages={1--31},
+  doi={10.1109/TSE.2025.3646150}
+}
+```
+
+**PCART**'s doxygen document is available [here](https://pcart-tools.github.io/PCART-doxygen/html).
 
 
 
