@@ -684,7 +684,7 @@ def addValueForAPI(callAPI,projName,runPath,runCommand,currentEnv,targetEnv,errL
                 command = f'cd Dynamic/{projName};{pythonPath} {runPath}/addValueForAPI.py  "{pklStr}" "{callStr}"'
     else: #大部分属于这种情况
         if platform.system() == "Windows":
-             command=f'cd Dynamic\\{projName} && {pythonPath} addValueForAPI.py  "{pklStr}" "{callStr}"'
+            command=f'cd Dynamic\\{projName} && {pythonPath} addValueForAPI.py  "{pklStr}" "{callStr}"'
         else:
             command=f'cd Dynamic/{projName};{pythonPath} addValueForAPI.py  "{pklStr}" "{callStr}"'
 
