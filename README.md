@@ -378,8 +378,10 @@ We release PCART as an open-source tool with the aim of contributing to and bene
   author={Zhang, Shuai and Xiao, Guanping and Wang, Jun and Lei, Huashan and He, Gangqiang and Liu, Yepang and Zheng, Zheng},
   journal={IEEE Transactions on Software Engineering},
   title={PCART: Automated Repair of Python API Parameter Compatibility Issues},
-  year={2025},
-  pages={1--31},
+  year={2026},
+  volume={52},
+  number={3},
+  pages={723-753},
   doi={10.1109/TSE.2025.3646150}
 }
 ```
